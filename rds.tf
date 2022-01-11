@@ -10,3 +10,7 @@
 #   parameter_group_name = "default.mysql15.7"
 #   skip_final_snapshot = true
 # }
+
+resource "aws_eip" "myeip" {
+  vpc = "true"
+}
